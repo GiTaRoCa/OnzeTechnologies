@@ -621,18 +621,18 @@ form.contact .form-control {
 	margin-bottom: 5px;
 	height: 50px;
 	padding: 15px;
-	border-color: transparent;
+	border-color: #d520271a;
 	box-shadow: 0 0 10px rgba(0,0,0,.01);
 	-webkit-box-shadow: 0 0 10px rgba(0,0,0,.01);
 	-moz-box-shadow: 0 0 10px rgba(0,0,0,.01);
 	-o-box-shadow: 0 0 10px rgba(0,0,0,.01);
 	-ms-box-shadow: 0 0 10px rgba(0,0,0,.01);
-	border-radius: 0;
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-	-o-border-radius: 0;
-	-ms-border-radius: 0;
-	border-width: 2px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	-ms-border-radius: 10px;
+	border-width: 1px;
 }
 
 form.contact .form-control:focus {
