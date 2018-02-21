@@ -788,3 +788,16 @@ footer i {
 	width:150px !important;
 	
 }
+ul.address {
+    margin-top: 30px;
+    list-style: none;
+    padding: 0;
+margin: 0;}
+
+.contact-info ul li {
+    margin-bottom: 8px;
+	color: #868e96!important;
+}
+.contact-info ul li a{
+   color:#d52027;
+}
