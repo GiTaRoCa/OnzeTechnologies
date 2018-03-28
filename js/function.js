@@ -7,10 +7,23 @@ $('#ModalInformation').on('show.bs.modal', function (event) {
   var recipient = button.data('id'); // Extract info from data-* attributes
   // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
   // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
-  recipient=parseInt(recipient)-1;
+
   var modal = $(this);
+
+  alert(recipient);
+   recipient=parseInt(recipient);
+  if(recipient>=2 && recipient<=7)
+  {
+    recipient=2;
+ 
+  };
+  alert(recipient);
+  modal.find('.modal-icon').attr("src","img/news/img0"+recipient+"sm.png");
+
+  recipient=recipient-1;
   modal.find('.modal-title').text(titles[recipient]);
-  /*modal.find('.modal-body input').val(recipient)*/
+
+  /*modal.find('.modal-body input').val(recipient)*/  
   //alert(titles[recipient-1]);
 	
  // $('#text-modal-container').html(textContainer[recipient]);	
