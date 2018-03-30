@@ -112,6 +112,10 @@ function LoadData(section){
           {"type":"text","title":"","cont":"<h5>QLIK – NPRINTING:</h5><p class='text-justify'>Divulgue conocimientos y perspectivas con informes que se pueden personalizar rápidamente. Cree informes realmente atractivos con datos y analítica de Qlik Sense y QlikView. Distribúyalos en un instante.</p>"},
           {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/LTLU_bmLVak"}
             ]},
+        {"title":"Transformación Digital","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Nuestra propuesta es Cambium Networks, con un amplio portafolio de Wi-Fi, de banda ancha fija de punto a punto (PTP) y de punto a multipunto (PMP), todas administradas por software basado en la nube. </p>"},
+          {"type":"text","title":"","cont":"<h5>cnMaestro - Administrador de red inalámbrica</h5><p class='text-justify'>cnMaestro ™ es una plataforma de software local o basada en la nube para un control de red seguro y de extremo a extremo. El administrador de redes inalámbricas cnMaestro simplifica la administración de dispositivos al ofrecer una visibilidad completa de la red y un aprovisionamiento sin contacto. Vea y realice un conjunto completo de funciones de administración de redes inalámbricas en tiempo real. Optimice la disponibilidad del sistema, maximice el rendimiento y satisfaga las necesidades emergentes de clientes empresariales y residenciales. </p>"},
+            ]},
     ]
   };
 
