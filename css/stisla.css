@@ -800,4 +800,26 @@ margin: 0;}
 }
 .contact-info ul li a{
    color:#d52027;
+   cursor:pointer;
+}
+.dropdown-item{
+
+	margin-left: 20px;
+}
+.modal-content{
+	background: black;
+    color: white;	
+}
+.modal-icon{
+	width:45px;
+
+}
+.modal-title{
+	float: right;
+	margin-left: 20px;
+	line-height: 2.5;
+}
+.btn-danger{
+	color: white !important;
+    font-weight: 1 !important;
 }
