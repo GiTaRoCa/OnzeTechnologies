@@ -830,6 +830,20 @@ margin: 0;}
     overflow-y: initial !important
 }
 .modal-body{
-    height:350px;
+   
     overflow-y: auto;
 }
+.modal-dialog{
+
+	height: 100%;
+
+  }
+  
+.modal-content{
+
+	height: 95%;
+
+	margin: auto;
+	
+} 
+  

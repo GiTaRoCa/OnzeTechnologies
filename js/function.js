@@ -12,6 +12,7 @@ $('#ModalInformation').on('show.bs.modal', function (event) {
   recipient=parseInt(recipient);
   icon=recipient;
   title=recipient;
+
   if(recipient>=1 && recipient<=7)
     {
       icon=1;
@@ -27,8 +28,18 @@ $('#ModalInformation').on('show.bs.modal', function (event) {
       icon=3;
       title=3;
     }
-    else if(recipient>14){
-      icon=recipient-11;
+    if(recipient==15)
+    {
+      icon=4;
+      title=4;
+    }
+    if(recipient>=16 && recipient<=21)
+    {
+      icon=5;
+      title=5;
+    }
+    else if(recipient>21){
+      icon=recipient-16;
       title=icon;
     } 
 
@@ -38,12 +49,8 @@ $('#ModalInformation').on('show.bs.modal', function (event) {
   /*modal.find('.modal-body input').val(recipient)*/  
   //alert(titles[recipient-1]);
 	
- // $('#text-modal-container').html(textContainer[recipient]);	
-
- 
-
-  $('.modal-body').html(LoadData(recipient));	
- 
+ // $('#text-modal-container').html(textContainer[recipient]);
+ $('.modal-body').html(LoadData(recipient));		
 
 });
 
@@ -70,7 +77,7 @@ function LoadData(section){
       {"type":"text","title":"","cont":"<p class='text-justify'>Es un modelo de entrega y consumo de servicios expresados en capacidades y recursos de cómputo y red que ofrece un prestador a un usuario/consumidor bajo unas condiciones específicas que ofrece el prestador para garantizar un acceso inmediato y directo a los recursos, crecer y decrecer según las necesidades y pagar por uso considerando aspectos de disponibilidad y seguridad.</p>"},
       {"type":"text","title":"","cont":"<h5>Infraestructura como Servicio (IaaS)</h5><p class='text-justify'>Somos un cloud Broker y aprovisionamos infraestructura como servicio donde se ofrece un conjunto de recursos que permite diseñar una solución a la medida de las necesidades de su negocio, de forma sencilla y pagando solo por lo que contrata. Nuestra plataforma Cloud cuenta con lo siguiente:</p><div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Pool de recursos a la medida</li><li>Control Total</li><li>Aprovisionamiento en tiempo real</li><li>Panel de control web</li><li>Firewall y backup</li><li>Autoservicio</li><li>Acceso vía app</li><li>Creación de plantillas para replica de servidores virtuales</li></ul></div><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Mínima latencia</li><li>Pago por uso</li><li>Asesoramiento y Consultoría</li><li>Soporte 24x7</li><li>Datacenter TIER IV</li><li>Firewall y backup avanzado</li><li>Balanceador de carga</li><li>Disaster and Recovery</li></ul></div></div><p class='text-justify'>Ofrecemos servicios gestionados sobre la infraestructura como servicio como parte fundamental de nuestra propuesta de valor. Nuestros servicios incluyen:</p><div class='row mx-auto '><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Consultoría y Diseño de la solución de infraestructura</li><li>Aprovisionamiento de servidores virtuales</li><li>Aseguramiento de los servidores</li></ul></div><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Administración de la infraestructura</li><li>Administración de los Sistemas Operativos</li><li>Gestión de los Servicios</li><li>Servicios de Monitorización</li></ul></div></div></div>"},
       {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/xMPWnAj6fx8"},
-      {"type":"linkImg","title":"","cont":"<div style='text-align:center;margin:5px'><a href='https://cloud.google.com/compute/?hl=es'><img class='img-responsive' src='img/news/imgLinks/link_xertica.png'></a></div>"},
+      {"type":"linkImg","title":"","cont":"<div style='text-align:center;margin:5px'><a href='https://cloud.google.com/compute/?hl=es'><img class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' src='img/news/imgLinks/link_xertica.png'></a></div>"},
         ]},
       {"title":"Transformación Digital","container":[
         {"type":"text","title":"","cont":"<p class='text-justify'>Es un modelo de entrega y consumo de servicios expresados en capacidades y recursos de cómputo y red que ofrece un prestador a un usuario/consumidor bajo unas condiciones específicas que ofrece el prestador para garantizar un acceso inmediato y directo a los recursos, crecer y decrecer según las necesidades y pagar por uso considerando aspectos de disponibilidad y seguridad.</p>"},
@@ -95,7 +102,7 @@ function LoadData(section){
           {"type":"text","title":"","cont":"<h5>Software como Servicio (SaaS)</h5><p class='text-justify'>Contamos con varias las aplicaciones de uso específico donde el consumidor no administra ni controla la infraestructura que soporta estos servicios, pero si algunos parámetros de configuración de las aplicaciones para su uso y por el cual paga. Tenemos las siguientes aplicaciones:</p>"},
           {"type":"text","title":"","cont":"<p class='text-justify'><strong>BACKUP COMO SERVICIO – TORII BACKUP by SYNOLOGY</strong>: Los datos no son sólo el núcleo de cualquier negocio sino también el activo significativo para los usuarios en general. Los archivos importantes, como sus documentos de trabajo críticos o fotos personales, merecen una gran estrategia de copia de seguridad para protegerse contra fallas de hardware inesperadas, desastres naturales o eliminación accidental simple. Permita que nuestra solución le ayude con espacio de almacenamiento personalizable y ampliable, tiene una opción perfecta para realizar copias de seguridad de cualquier dispositivo, ya sea un equipo con Windows, Mac u otros dispositivos.</p>"},
           {"type":"text","title":"","cont":"<div class='row mx-auto '><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>100% backup en la nube</li><li>Copias Online</li><li>Five Versioning</li><li>Transferencia cifrada SSL</li></ul></div><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Cliente compatible con Windows, MAC y Linux</li><li>Para estaciones de trabajo y Servidores</li><li>Portal de carga y descarga de archivos</li><li>Compartir archivos con clave y vencimiento</li></ul></div></div>"},
-          {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/Z6eB3eUEieU"}
+          {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/Sp7hHcDYNGw"}
             ]},
         {"title":"Transformación Digital","container":[
           {"type":"text","title":"","cont":"<p class='text-justify'>Es un modelo de entrega y consumo de servicios expresados en capacidades y recursos de cómputo y red que ofrece un prestador a un usuario/consumidor bajo unas condiciones específicas que ofrece el prestador para garantizar un acceso inmediato y directo a los recursos, crecer y decrecer según las necesidades y pagar por uso considerando aspectos de disponibilidad y seguridad.</p>"},
@@ -154,19 +161,34 @@ function LoadData(section){
             ]},
        {"title":"Seguridad informática","container":[
           {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos una gama completa de productos de seguridad sencillos, escalables y fáciles de administrar para medianas empresas. Protección de redes y estaciones de trabajo, con administración centralizada y comunicación entre las partes. Nuestras soluciones son líderes en el cuadrante de Gartner.</p>"},
-          {"type":"text","title":"","cont":"<h5>SOPHOS</h5>"},
+          {"type":"text","title":"","cont":"<h5>SOPHOS</h5><br>"},
           {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/67737500?portrait=0"},
-          {"type":"text","title":"","cont":"<h5>SOPHOS ENDPOINT</h5><p class='text-justify'>Antivirus Sofisticado y sencillo, protección contra amenazas avanzadas, filtrado web y cumplimiento de políticas.</p>"},
-          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/68961352?portrait=0"},
-          {"type":"text","title":"","cont":"<h5>SOPHOS UTM</h5><p class='text-justify'>La gestión unificada de las amenazas simplifica la seguridad Sophos UTM proporciona seguridad completa, desde cortafuegos de red a antivirus para estaciones de trabajo, en un solo dispositivo por módulos. Simplifica la seguridad informática y elimina las complicaciones de utilizar soluciones diferentes en varios puntos. La interfaz intuitiva ayuda a crear políticas rápidamente para controlar los riesgos para la seguridad, mientras que los informes claros y detallados le ofrecerán toda la información que necesita para mejorar la protección y el rendimiento de la red.</p>"},
-          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/69276551?portrait=0"},
-          {"type":"text","title":"","cont":"<h5>SOPHOS SAFEGUARD</h5><p class='text-justify'>Protección de los datos en cualquier lugar. Protección completa de los datos en múltiples plataformas y dispositivos, sin afectar al rendimiento.</p>"},
-          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/78018141?portrait=0"},
-          {"type":"text","title":"","cont":"<h5>SOPHOS Mobile Control</h5><p class='text-justify'>Innumerables dispositivos, una única solución. Gestión y seguridad completa de dispositivos móviles, contenidos y aplicaciones. Administre sus dispositivos móviles, contenidos, aplicaciones y su correo electrónico, además de los antivirus, antimalware y filtrado web. Para los profesionales de IT que desean poder disfrutar de movilidad, Sophos Mobile Control (SMC) administra y protege dispositivos móviles, contenido y aplicaciones.</p>"},
-          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/68636604?portrait=0"},
-          {"type":"text","title":"","cont":"<h5>SOPHOS Cloud</h5><p class='text-justify'>Seguridad integrada para Windows, Mac y móviles Seguridad rápida y sencilla para todos sus dispositivos Windows, Mac y móviles a través de la nube Sophos Cloud es la única solución de seguridad integrada para dispositivos Windows, Mac y móviles. Con una experiencia de usuario sencilla e intuitiva, Sophos Cloud es fácil de implementar, administrar y mantener. </p>"},
-          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/86313331?portrait=0"}
         ]},
+        {"title":"Seguridad informática","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos una gama completa de productos de seguridad sencillos, escalables y fáciles de administrar para medianas empresas. Protección de redes y estaciones de trabajo, con administración centralizada y comunicación entre las partes. Nuestras soluciones son líderes en el cuadrante de Gartner.</p>"},
+          {"type":"text","title":"","cont":"<h5>SOPHOS ENDPOINT</h5><br><p class='text-justify'>Antivirus Sofisticado y sencillo, protección contra amenazas avanzadas, filtrado web y cumplimiento de políticas.</p>"},
+          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/68961352?portrait=0"},         
+        ]},
+        {"title":"Seguridad informática","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos una gama completa de productos de seguridad sencillos, escalables y fáciles de administrar para medianas empresas. Protección de redes y estaciones de trabajo, con administración centralizada y comunicación entre las partes. Nuestras soluciones son líderes en el cuadrante de Gartner.</p>"},
+          {"type":"text","title":"","cont":"<h5>SOPHOS UTM</h5><br><p class='text-justify'>La gestión unificada de las amenazas simplifica la seguridad Sophos UTM proporciona seguridad completa, desde cortafuegos de red a antivirus para estaciones de trabajo, en un solo dispositivo por módulos. Simplifica la seguridad informática y elimina las complicaciones de utilizar soluciones diferentes en varios puntos. La interfaz intuitiva ayuda a crear políticas rápidamente para controlar los riesgos para la seguridad, mientras que los informes claros y detallados le ofrecerán toda la información que necesita para mejorar la protección y el rendimiento de la red.</p>"},
+          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/69276551?portrait=0"},
+        ]},
+        {"title":"Seguridad informática","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos una gama completa de productos de seguridad sencillos, escalables y fáciles de administrar para medianas empresas. Protección de redes y estaciones de trabajo, con administración centralizada y comunicación entre las partes. Nuestras soluciones son líderes en el cuadrante de Gartner.</p>"},
+          {"type":"text","title":"","cont":"<h5>SOPHOS SAFEGUARD</h5><br><p class='text-justify'>Protección de los datos en cualquier lugar. Protección completa de los datos en múltiples plataformas y dispositivos, sin afectar al rendimiento.</p>"},
+          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/78018141?portrait=0"},
+        ]},
+        {"title":"Seguridad informática","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos una gama completa de productos de seguridad sencillos, escalables y fáciles de administrar para medianas empresas. Protección de redes y estaciones de trabajo, con administración centralizada y comunicación entre las partes. Nuestras soluciones son líderes en el cuadrante de Gartner.</p>"},
+          {"type":"text","title":"","cont":"<h5>SOPHOS Mobile Control</h5><br><p class='text-justify'>Innumerables dispositivos, una única solución. Gestión y seguridad completa de dispositivos móviles, contenidos y aplicaciones. Administre sus dispositivos móviles, contenidos, aplicaciones y su correo electrónico, además de los antivirus, antimalware y filtrado web. Para los profesionales de IT que desean poder disfrutar de movilidad, Sophos Mobile Control (SMC) administra y protege dispositivos móviles, contenido y aplicaciones.</p>"},
+          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/68636604?portrait=0"},
+        ]},
+        {"title":"Seguridad informática","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos una gama completa de productos de seguridad sencillos, escalables y fáciles de administrar para medianas empresas. Protección de redes y estaciones de trabajo, con administración centralizada y comunicación entre las partes. Nuestras soluciones son líderes en el cuadrante de Gartner.</p>"},
+          {"type":"text","title":"","cont":"<h5>SOPHOS Cloud</h5><br><p class='text-justify'>Seguridad integrada para Windows, Mac y móviles Seguridad rápida y sencilla para todos sus dispositivos Windows, Mac y móviles a través de la nube Sophos Cloud es la única solución de seguridad integrada para dispositivos Windows, Mac y móviles. Con una experiencia de usuario sencilla e intuitiva, Sophos Cloud es fácil de implementar, administrar y mantener. </p>"},
+          {"type":"video","title":"SOPHOS","cont":"https://player.vimeo.com/video/86313331?portrait=0"}
+        ]},    
        {"title":"Soluciones de gestión empresarial","container":[
           {"type":"text","title":"","cont":"<p class='text-justify'><p class='text-justify'>Ofrecemos soluciones de Software y Hardware para la Cadena de Abastecimiento con el fin de lograr incrementar su eficiencia operacional, resultando en una mayor rentabilidad y clientes más satisfechos.</p>"},
           {"type":"text","title":"","cont":"<h5>Soluciones de hardware</h5><div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>RFID</li><li>Tecnología de Voz</li><li>Impresoras</li><li>Terminales</li><li>Etiquetado</li></ul></div></div></div>"},  
@@ -175,9 +197,9 @@ function LoadData(section){
             ]},   
       {"title":"Soluciones Retail - Hardware y Software","container":[
           {"type":"text","title":"","cont":"<p class='text-justify'>Comercializamos las mejores marcas de soluciones retail a nivel mundial NCR y Toshiba. Un completo portafolio de Hardware, Software y periféricos para puntos de venta - POS para cumplir con las necesidades de nuestros clientes en diferentes sectores. <br><br>Nuestra propuesta de valor es ofrecer servicios administrados para soportar la operación de nuestros clientes, que normalmente tienen sus sedes y puntos de venta en una dispersión geográfica importante a nivel nacional. Prestamos soporte en sitio con repuestos, en horario estándar y 7x24.</p>"},
-          {"type":"text","title":"","cont":"<h5>Toshiba</h5>"},
+          {"type":"text","title":"","cont":"<h5>Toshiba</h5><br>"},
           {"type":"video","title":"Toshiba","cont":"https://www.youtube.com/embed/QuJ4GjXcKN4"},
-          {"type":"text","title":"","cont":"<h5>NCR</h5>"},
+          {"type":"text","title":"","cont":"<h5>NCR</h5><br>"},
           {"type":"video","title":"NCR","cont":"https://www.youtube.com/embed/udM8U7bo2OM"},
                 ]},
       {"title":"Hardware - Software-Licenciamiento","container":[
@@ -223,9 +245,6 @@ function LoadData(section){
       }
       
   }
-  
- 
-
   dataContainer.push("</div>");
  
   for(var j=0;j<dataContainer.length;j++){
@@ -236,19 +255,8 @@ function LoadData(section){
   return textContainer;
 
 };
-function Data(section){
-
-  var linksVideo={"video":[
-    {"section":0,"link":"https://www.youtube.com/embed/6ZeMEae6pGs"},
-    {"section":1,"link":"https://www.youtube.com/embed/xMPWnAj6fx8"},
-    {"section":1,"link":"https://www.youtube.com/embed/UaoQ7mq7QTM"},
-    {"section":1,"link":"https://www.youtube.com/watch?v=Z6eB3eUEieU"},
-    {"section":1,"link":"https://drive.google.com/file/d/0B6m88QgUmsMOSmtzM3N0cXA2MHM/view"},
-    {"section":1,"link":"https://www.youtube.com/embed/hHuO8MEqKDY"},
-    {"section":1,"link":"https://www.youtube.com/embed/LoVt5lsmC6M"}
-]};
-
-
+function CleanModal(){
+  $('.modal-body').html("<div></div>");	
 }
 
 
