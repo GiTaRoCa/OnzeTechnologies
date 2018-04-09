@@ -1,8 +1,19 @@
 
 var titles=["Transformación Digital","Cloud Computing (IaaS – SaaS)","Big Data - Analítica","Movilidad","Oficinas y Casas Inteligentes","Seguridad Informática","Soluciones de Gestión Empresarial","Soluciones Retail – Hardware y Software","Hardware – Software - Licenciamiento","Redes Eléctricas y Comunicaciones","Gestión del Cambio"];
 var icons=["img/news/img01sm.png","img/news/img02sm.png","img/news/img03sm.png","img/news/img04sm.png","img/news/img05sm.png","img/news/img06sm.png","img/news/img07sm.png","img/news/img08sm.png","img/news/img09sm.png","img/news/img10sm.png","img/news/img11sm.png"];
+var validateCaptcha = false;
+var captcha = null;
+var onloadCallback = function () {
 
-
+	captcha = grecaptcha.render('captcha_container', {
+		'sitekey': '6LePKFIUAAAAAM5F1pWidBIniwgI3Op5422lpNjF',
+		'callback': function (response) {
+			//$('#btn_submit').removeAttr('disabled');
+			validateCaptcha = true;
+		},
+		'theme': 'dark'
+	});
+};
 $('#ModalInformation').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget); // Button that triggered the modal
   var recipient = button.data('id'); // Extract info from data-* attributes
@@ -258,5 +269,62 @@ function LoadData(section){
 function CleanModal(){
   $('.modal-body').html("<div></div>");	
 }
+function SendAnchor(link){
 
+   setTimeout(function (){window.location.assign(link);},500); 
+   
+}
+function SendMail(e,id){
+
+  alert("hola"+id);
+  if(ValidateForm(e,id)){
+
+
+  }
+  e.preventDefault();
+	return false;
+}
+function ValidateForm(e,id){
+  var formMessage=document.getElementById(id);
+  var sendMail=new Array();
+  var parameters="";
+  var lengthForm=formMessage.length;
+  for(var i=0;i<lengthForm;i++)
+    {
+        var elementsForm=formMessage.elements[i];
+        var textValue=elementsForm.value.trim();
+        if(elementsForm.type == "text" || elementsForm.type == "email" || elementsForm.name == "message")
+        {
+          if (textValue == "" || textValue.length == 0 || /^\s+|\s+$/.test(textValue)) {
+            elementsForm.classList.add("invalidate");
+            elementsForm.focus();
+            selectModal(0);
+            return false;
+          } else {
+            elementsForm.classList.remove("invalidate");
+            elementsForm.value = elementsForm.value.trim();
+            sendMail[i] = elementsForm.name + "=" + elementsForm.value;
+    
+          } 
+
+        }
+        
+
+    }
+    if (!validateCaptcha) {
+      selectModal(1);
+      return false;
+    } else {
+      console.log(sendMail);
+    }
+    e.preventDefault();
+  return false;
+}
+
+function selectModal(data) {
+	var textAlert = new Array("Por favor verifique los datos digitados<br>Gracias", "Por favor verifique que no es un robot","Gracias por contactarnos, en las prÃ³ximas horas uno de nuestros asesores se comunicarÃ¡ contigo para brindarte la asesorÃ­a que requieras.","Se presento un inconveniente intenta de nuevo");
+	//alert(textAlert[data]);
+	$(".modal-body").html("<p class='text-center'> "+textAlert[data]+"</p>");
+	$("#ModalInfo").modal();
+}
 

@@ -1,6 +1,6 @@
 <?php
 //Import PHPMailer classes into the global namespace
-use PHPMailer\PHPMailer\PHPMailer;
+/*use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest') {
@@ -37,4 +37,4 @@ if(!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     }
 }else{
     echo "<h1>Access forbidden, kids!</h1>";
-}
+}*/
