@@ -1,6 +1,6 @@
 /*reset*/
-html, body {
-	height: 100% !important;
+html,body {
+	height:100% !important;
 }
 
 .main-loading {
@@ -822,4 +822,14 @@ margin: 0;}
 .btn-danger{
 	color: white !important;
     font-weight: 1 !important;
+}
+
+
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height:350px;
+    overflow-y: auto;
 }

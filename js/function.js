@@ -1,5 +1,5 @@
 
-var titles=["Transformación Digital","Cloud Computing (IaaS – SaaS)","Business Intelligence - Analítica","Movilidad","Oficinas y Casas Inteligentes","Seguridad Informática","Soluciones de Gestión Empresarial","Soluciones Retail – Hardware y Software","Hardware – Software - Licenciamiento","Redes Eléctricas y Comunicaciones","Gestión del Cambio"];
+var titles=["Transformación Digital","Cloud Computing (IaaS – SaaS)","Big Data - Analítica","Movilidad","Oficinas y Casas Inteligentes","Seguridad Informática","Soluciones de Gestión Empresarial","Soluciones Retail – Hardware y Software","Hardware – Software - Licenciamiento","Redes Eléctricas y Comunicaciones","Gestión del Cambio"];
 var icons=["img/news/img01sm.png","img/news/img02sm.png","img/news/img03sm.png","img/news/img04sm.png","img/news/img05sm.png","img/news/img06sm.png","img/news/img07sm.png","img/news/img08sm.png","img/news/img09sm.png","img/news/img10sm.png","img/news/img11sm.png"];
 
 
@@ -17,11 +17,21 @@ $('#ModalInformation').on('show.bs.modal', function (event) {
       icon=1;
       title=1;
     }
-    else if(recipient>7){
-      icon=recipient-6;
+  if(recipient>=8 && recipient<=11)
+    {
+      icon=2;
+      title=2;
+    }
+    if(recipient>=12 && recipient<=14)
+    {
+      icon=3;
+      title=3;
+    }
+    else if(recipient>14){
+      icon=recipient-11;
       title=icon;
     } 
-    
+
   modal.find('.modal-icon').attr("src",icons[icon]);
   modal.find('.modal-title').text(titles[title]);
 
@@ -103,21 +113,36 @@ function LoadData(section){
             ]},
         {"title":"Transformación Digital","container":[
           {"type":"text","title":"","cont":"<p class='text-justify'>Actualmente en el entorno de los negocios y la tecnología se escuchan conceptos como Business Intelligence, Analytics y Big Data. Todos ellos relacionados con los datos, su estructura, la forma como se consumen y el conocimiento que podemos generar con ellos. Escuchamos adicionalmente expertos que hablan del valor de los datos, de la importancia de la información, incluso se ha llegado a decir que, para el mundo de los negocios hoy en día, los datos tienen tanto valor como el capital y el trabajo</p>"},
-          {"type":"text","title":"","cont":"<h5>QLIK</h5><p class='text-justify'>Con nuestra solución busque y explore enormes cantidades de datos... todos sus datos. Con Qlik, no está limitado por nociones preconcebidas de cómo deben estar relacionados los datos, sino que le permite por fin entender cómo están relacionados de verdad. Analice, revele, colabore y actúe. Qlik le permite convertir datos en conocimiento en todos los ámbitos de su negocio. Soluciones de Qlik</p>"},
+          {"type":"text","title":"","cont":"<h5>QLIK</h5><br><p class='text-justify'>Con nuestra solución busque y explore enormes cantidades de datos... todos sus datos. Con Qlik, no está limitado por nociones preconcebidas de cómo deben estar relacionados los datos, sino que le permite por fin entender cómo están relacionados de verdad. Analice, revele, colabore y actúe. Qlik le permite convertir datos en conocimiento en todos los ámbitos de su negocio. Soluciones de Qlik</p>"},
           {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/m4fQzRJ2WLk"},
-          {"type":"text","title":"","cont":"<h5>QLIK SENSE - SELF-SERVICE VISUALIZATION:</h5><p class='text-justify'>Analítica guiada y de autoservicio, cuente su historia, explore sus datos intuitivamente, todo en un único lugar. Cree visualizaciones inteligentes con solo arrastrar y soltar.</p>"},
+            ]},
+        {"title":"Transformación Digital","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Actualmente en el entorno de los negocios y la tecnología se escuchan conceptos como Business Intelligence, Analytics y Big Data. Todos ellos relacionados con los datos, su estructura, la forma como se consumen y el conocimiento que podemos generar con ellos. Escuchamos adicionalmente expertos que hablan del valor de los datos, de la importancia de la información, incluso se ha llegado a decir que, para el mundo de los negocios hoy en día, los datos tienen tanto valor como el capital y el trabajo</p>"},
+          {"type":"text","title":"","cont":"<h5>QLIK SENSE - SELF-SERVICE VISUALIZATION:</h5><br><p class='text-justify'>Analítica guiada y de autoservicio, cuente su historia, explore sus datos intuitivamente, todo en un único lugar. Cree visualizaciones inteligentes con solo arrastrar y soltar.</p>"},
           {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/85QHuNNeaCg"},
-          {"type":"text","title":"","cont":"<h5>QLIKVIEW - GUIDED ANALYTICS:</h5><p class='text-justify'>Guíe las exploraciones controladas de conjuntos de datos dinámicos hacia un descubrimiento más profundo. Permite crear una app personalizada en un entorno de creación de scripts de QlikView. Disponible en versión de escritorio o servidor</p>"},
+            ]},
+        {"title":"Transformación Digital","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Actualmente en el entorno de los negocios y la tecnología se escuchan conceptos como Business Intelligence, Analytics y Big Data. Todos ellos relacionados con los datos, su estructura, la forma como se consumen y el conocimiento que podemos generar con ellos. Escuchamos adicionalmente expertos que hablan del valor de los datos, de la importancia de la información, incluso se ha llegado a decir que, para el mundo de los negocios hoy en día, los datos tienen tanto valor como el capital y el trabajo</p>"},
+          {"type":"text","title":"","cont":"<h5>QLIKVIEW - GUIDED ANALYTICS:</h5><br><p class='text-justify'>Guíe las exploraciones controladas de conjuntos de datos dinámicos hacia un descubrimiento más profundo. Permite crear una app personalizada en un entorno de creación de scripts de QlikView. Disponible en versión de escritorio o servidor</p>"},
           {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/sqILcEwlHSI"},
-          {"type":"text","title":"","cont":"<h5>QLIK – NPRINTING:</h5><p class='text-justify'>Divulgue conocimientos y perspectivas con informes que se pueden personalizar rápidamente. Cree informes realmente atractivos con datos y analítica de Qlik Sense y QlikView. Distribúyalos en un instante.</p>"},
+            ]},
+        {"title":"Transformación Digital","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Actualmente en el entorno de los negocios y la tecnología se escuchan conceptos como Business Intelligence, Analytics y Big Data. Todos ellos relacionados con los datos, su estructura, la forma como se consumen y el conocimiento que podemos generar con ellos. Escuchamos adicionalmente expertos que hablan del valor de los datos, de la importancia de la información, incluso se ha llegado a decir que, para el mundo de los negocios hoy en día, los datos tienen tanto valor como el capital y el trabajo</p>"},
+          {"type":"text","title":"","cont":"<h5>QLIK – NPRINTING:</h5><br><p class='text-justify'>Divulgue conocimientos y perspectivas con informes que se pueden personalizar rápidamente. Cree informes realmente atractivos con datos y analítica de Qlik Sense y QlikView. Distribúyalos en un instante.</p>"},
           {"type":"video","title":"Transformación Digital","cont":"https://www.youtube.com/embed/LTLU_bmLVak"}
             ]},
         {"title":"Movilidad","container":[
           {"type":"text","title":"","cont":"<p class='text-justify'>Nuestra propuesta es Cambium Networks, con un amplio portafolio de Wi-Fi, de banda ancha fija de punto a punto (PTP) y de punto a multipunto (PMP), todas administradas por software basado en la nube. </p>"},
-          {"type":"text","title":"","cont":"<h5>cnMaestro - Administrador de red inalámbrica</h5><p class='text-justify'>cnMaestro ™ es una plataforma de software local o basada en la nube para un control de red seguro y de extremo a extremo. El administrador de redes inalámbricas cnMaestro simplifica la administración de dispositivos al ofrecer una visibilidad completa de la red y un aprovisionamiento sin contacto. Vea y realice un conjunto completo de funciones de administración de redes inalámbricas en tiempo real. Optimice la disponibilidad del sistema, maximice el rendimiento y satisfaga las necesidades emergentes de clientes empresariales y residenciales. </p>"},
+          {"type":"text","title":"","cont":"<h5>cnMaestro - Administrador de red inalámbrica</h5><br><p class='text-justify'>cnMaestro ™ es una plataforma de software local o basada en la nube para un control de red seguro y de extremo a extremo. El administrador de redes inalámbricas cnMaestro simplifica la administración de dispositivos al ofrecer una visibilidad completa de la red y un aprovisionamiento sin contacto. Vea y realice un conjunto completo de funciones de administración de redes inalámbricas en tiempo real. Optimice la disponibilidad del sistema, maximice el rendimiento y satisfaga las necesidades emergentes de clientes empresariales y residenciales. </p>"},
           {"type":"text","title":"","cont":"<h5>WiFi</h5><p class='text-justify'>cnPilot 802.11ac Wave 2 Los productos Wi-Fi con capacidades de administración avanzadas ofrecen alta capacidad y una instalación rápida en un paquete asequible: para conectar personas, lugares y cosas. Cambium Networks ofrece soluciones seguras, escalables y administradas en la nube para el hogar, las pequeñas empresas y las aplicaciones de redes Wi-Fi locales de empresas tanto interiores como exteriores. <br> <br> Cada punto de acceso Wi-Fi 802.11ac y 802.11n edge y enterprise se puede instalar en redes de área local inalámbricas nuevas o existentes, incluso las de otros fabricantes de equipos de red, y junto con diagnósticos remotos inteligentes e integrados que garantizan una implementación rápida y sencilla operación, nunca ha sido más fácil conectar lo desconectado.</p>"},
+            ]},
+        {"title":"Movilidad","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Nuestra propuesta es Cambium Networks, con un amplio portafolio de Wi-Fi, de banda ancha fija de punto a punto (PTP) y de punto a multipunto (PMP), todas administradas por software basado en la nube. </p>"},
           {"type":"text","title":"","cont":"<h5>Redes punto a punto</h5><p class='text-justify'>Nuestras soluciones probadas de la serie punto a punto (PTP) se implementan en todo el mundo y prestan servicios a aplicaciones altamente críticas en entornos formidables para los usuarios más exigentes del mundo. <br> <br> Con el mejor desempeño en su clase en el mundo real y la seguridad aprobada por FIPS 140-2 disponible para aplicaciones gubernamentales y militares, la serie PTP es su conexión a lo que importa, no importa qué.</p>"},
-          {"type":"text","title":"","cont":"<h5>Soluciones banda ancha punto a multipunto</h5><p class='text-justify'>Con un registro mundial de implementación de una década de solidez, nuestras soluciones de Internet inalámbrico fijo punto a multipunto (PMP) y ePMP ™ conectan a millones de personas en todo el mundo. Con la reutilización de frecuencia habilitada por la Sincronización GPS y respaldada por el software PMP, su red de banda ancha inalámbrica puede evitar la crisis del espectro y crecer con su base de clientes. <br> <br> Las soluciones de acceso y distribución punto a multipunto permiten a los operadores de red brindar servicios de Internet inalámbrico de alta velocidad a clientes comerciales y residenciales. Las aplicaciones admitidas incluyen transferencia de datos y archivos, voz, transmisión de video y videovigilancia. Estas redes inalámbricas de banda ancha de PMP escalan desde pequeñas implementaciones para conectar áreas remotas a implementaciones en toda la comunidad con miles de suscriptores.</p>"},
+          {"type":"text","title":"","cont":"<h5>Soluciones banda ancha punto a multipunto</h5><br><p class='text-justify'>Con un registro mundial de implementación de una década de solidez, nuestras soluciones de Internet inalámbrico fijo punto a multipunto (PMP) y ePMP ™ conectan a millones de personas en todo el mundo. Con la reutilización de frecuencia habilitada por la Sincronización GPS y respaldada por el software PMP, su red de banda ancha inalámbrica puede evitar la crisis del espectro y crecer con su base de clientes. <br> <br> Las soluciones de acceso y distribución punto a multipunto permiten a los operadores de red brindar servicios de Internet inalámbrico de alta velocidad a clientes comerciales y residenciales. Las aplicaciones admitidas incluyen transferencia de datos y archivos, voz, transmisión de video y videovigilancia. Estas redes inalámbricas de banda ancha de PMP escalan desde pequeñas implementaciones para conectar áreas remotas a implementaciones en toda la comunidad con miles de suscriptores.</p>"},
+            ]},
+        {"title":"Movilidad","container":[
+          {"type":"text","title":"","cont":"<p class='text-justify'>Nuestra propuesta es Cambium Networks, con un amplio portafolio de Wi-Fi, de banda ancha fija de punto a punto (PTP) y de punto a multipunto (PMP), todas administradas por software basado en la nube. </p>"},
           {"type":"text","title":"","cont":"<h5>IIOT – Dispositivos IOT y Soluciones</h5><p class='text-justify'>Los dispositivos IOT de Cambium Networks ofrecen una infraestructura de comunicaciones potente y resistente que interconecta sensores y controles a través de redes de área de campo a gran escala, aprovechando el potencial del IIoT para transformar datos acumulados y en tiempo real en conocimiento profundo y acciones críticas. <br> <br> Cambium atiende verticales industriales como petróleo / gas, servicios eléctricos, gestión de agua / aguas residuales / aguas pluviales, operaciones ferroviarias y transporte inteligente. <br> <br> Con las soluciones Cambium, las organizaciones industriales pueden mejorar la eficiencia operativa, reducir el tiempo de inactividad, aumentar la seguridad y alinearse con las iniciativas corporativas de IoT.</p>"},
           {"type":"video","title":"Movilidad","cont":"https://www.youtube.com/embed/5pcgC1UM650"}
             ]},
