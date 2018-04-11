@@ -811,39 +811,50 @@ margin: 0;}
     color: white;	
 }
 .modal-icon{
-	width:45px;
-
+	width: 40px;
+    display: inline;
 }
 .modal-title{
-	float: right;
-	margin-left: 20px;
+	margin-left:5px;
 	line-height: 2.5;
+	display: inline;	
+}
+.modal-header{
+	display: inline !important
 }
 .btn-danger{
 	color: white !important;
-    font-weight: 1 !important;
+	font-weight: 1 !important;
 }
-
-
 /* Important part */
-.modal-dialog{
-
-}
 .modal-body{
-   
     overflow-y: auto;
 }
 .modal-dialog{
-
-	height: 100%;
-
-  }
-  
+	height: 90%;
+}
 .modal-content{
-
 	height: 95%;
-
 	margin: auto;
-	
+	box-shadow:0px 0px  5px 5px #888888;
+
 } 
-  
+.btnArrow{
+	position: fixed;
+    bottom:5px;
+    z-index: 10;
+	right:10px;
+	opacity: 0.2;
+	cursor: pointer;
+	width: auto;
+	display: none;
+}
+.btnArrow:hover{
+
+	opacity: 1;
+	
+}
+.btnArrow img{
+	width:70px;
+}
+
