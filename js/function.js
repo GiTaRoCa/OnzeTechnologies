@@ -218,10 +218,13 @@ var myObj={"blocks":[
     {"title":"Hardware - Software-Licenciamiento","container":[
         {"type":"text","title":"","cont":"<h5>Soluciones Hardware</h5>"},
         {"type":"text","title":"","cont":"<p class='text-justify'>Ofrecemos un completo portafolio de Hardware de reconocidas marcas como Lenovo, HP y Dell.</p>"},
-        {"type":"text","title":"","cont":"<div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Soluciones de comp​utación personal (Desktop, laptop, Workstation, Thin Client, PDA).</li><li>Soluciones de servidoresx86, misión crítica, almacenamiento, respaldo.</li><li>Soluciones de impresión e imagen.</li><li>Soluciones de Networking.</li></ul></div></div></div>"},  
+        {"type":"text","title":"","cont":"<div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Soluciones de comp​utación personal (Desktop, laptop, Workstation, Thin Client, PDA).</li><li>Soluciones de servidoresx86, misión crítica, almacenamiento, respaldo.</li></ul></div><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Soluciones de impresión e imagen.</li><li>Soluciones de Networking.</li></ul></div></div></div>"},  
         {"type":"text","title":"","cont":"<h5>Soluciones Software-Licenciamiento</h5>"},
         {"type":"text","title":"","cont":"<p class='text-justify'>Manejamos todo el licenciamiento Microsoft, Adobe y Mac (Apple)</p>"},
-        {"type":"text","title":"","cont":"<div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Especialistas en modelos de licenciamiento.</li><li>Gestión de Activos de Software (SAM)</li><li>Modelo de Maduración Tecnológica.</li></ul></div></div></div>"},  
+        {"type":"text","title":"","cont":"<div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Especialistas en modelos de licenciamiento.</li></ul></div><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Gestión de Activos de Software (SAM)</li><li>Modelo de Maduración Tecnológica.</li></ul></div></div></div>"},
+        {"type":"text","title":"","cont":"<h5>Desarrollo de Software a la Medida</h5>"},
+        {"type":"text","title":"","cont":"<p class='text-justify'>Creamos soluciones informáticas para cuando en tu empresa tienes una necesidad y no existe en el mercado un producto comercial que se ajuste a ella. Desarrollamos diferentes tipos de software con múltiples lenguajes de programación como aplicaciones de escritorio, aplicaciones web, apps para iOS y Android, páginas web, desarrollo y consumo de Web Service, integraciones, conexiones con bases de datos entre otros.</p>"},
+        
         ]},
     {"title":"Redes eléctricas y de comunicaciones","container":[
       {"type":"text","title":"","cont":"<p class='text-justify'>Contamos con un equipo humano con gran experiencia en montajes, desarrollo y logística de proyectos en:</p>"},
@@ -316,7 +319,7 @@ return true;
 };
 //Function select Modal
 function selectModal(data) {
-var textAlert = new Array("Por favor verifique los datos digitados<br>Gracias", "Por favor verifique que no es un robot","Gracias por contactarnos, en las próximas horas uno de nuestros asesores se comunicará ¡contigo para brindarte la asesoría que requieras.", "Se presento un inconveniente intenta de nuevo");
+var textAlert = new Array("Por favor verifique los datos digitados<br>Gracias", "Por favor verifique que no es un robot","Gracias por contactarnos, en las próximas horas uno de nuestros asesores se comunicarán,", "Se presento un inconveniente intenta de nuevo");
 //alert(textAlert[data]);
 $(".modal-body").html("<p class='text-center'> "+textAlert[data]+"</p>");
 $("#ModalInfo").modal();
