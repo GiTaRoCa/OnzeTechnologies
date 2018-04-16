@@ -151,11 +151,12 @@ html,body {
 	width: 100%;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	z-index: 1;
+	z-index: 3;
+	background: #00000045; 
 }
 
 .navbar.main-navbar.bg-dark {
-	background-color: #000 !important;
+	background-color: #d42329  !important;
 }
 
 .navbar.main-navbar .navbar-brand {
