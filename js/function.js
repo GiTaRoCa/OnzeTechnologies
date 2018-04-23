@@ -222,6 +222,7 @@ var myObj={"blocks":[
   {"type":"text","title":"","cont":"<h5>Soluciones Software-Licenciamiento</h5>"},
   {"type":"text","title":"","cont":"<p class='text-justify'>Manejamos todo el licenciamiento Microsoft, Adobe y Mac (Apple)</p>"},
   {"type":"text","title":"","cont":"<div class='container'><div class='row mx-auto'><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Especialistas en modelos de licenciamiento.</li></ul></div><div class='col-xs-12 col-ms-12 col-md-12 col-lg-6 col-xl-6'><ul><li>Gestión de Activos de Software (SAM)</li><li>Modelo de Maduración Tecnológica.</li></ul></div></div></div>"},
+  {"type":"linkImg","title":"","cont":"<div style='text-align:center;margin:5px'><img class='col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12' src='img/news/imgLinks/microsoft.jpg'></div>"},
   {"type":"text","title":"","cont":"<h5>Desarrollo de Software a la Medida</h5>"},
   {"type":"text","title":"","cont":"<p class='text-justify'>Creamos soluciones informáticas para cuando en tu empresa tienes una necesidad y no existe en el mercado un producto comercial que se ajuste a ella. Desarrollamos diferentes tipos de software con múltiples lenguajes de programación como aplicaciones de escritorio, aplicaciones web, apps para iOS y Android, páginas web, desarrollo y consumo de Web Service, integraciones, conexiones con bases de datos entre otros.</p>"},
   ]},
@@ -381,4 +382,10 @@ function ScrollAnimation(){
   },10);
   
 };
-
+//Function keyuo 
+$('textarea').keyup(function(e){
+  if(e.keyCode == 13)
+  {
+      $(this).trigger("enterKey");
+  }
+});
